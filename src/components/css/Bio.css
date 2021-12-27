@@ -1,0 +1,84 @@
+.a2a_s_snapchat {
+  border: 1px solid yellow;
+}
+
+#aboutus {
+  color: white;
+}
+
+.aboutuspic {
+  max-width: 90%;
+  height: 315px;
+  margin-top: 30px;
+}
+
+.bio p {
+  text-indent: 13%;
+  margin: 20px;
+  text-align: center;
+  text-shadow: 1px 0.5px black;
+}
+
+.bio a {
+  color: darkred;
+}
+
+#aboutus p span {
+  font-size: 27px;
+}
+
+.membersNav {
+  width: 100%;
+  background-color: black;
+  color: darkred;
+  text-shadow: 1px 1px #3b0600;
+  border-bottom: 0.5px solid white;
+  opacity: 0.8;
+}
+
+.members h5 {
+  color: darkred;
+  text-align: center;
+  text-shadow: 1px 1px #3b0600;
+}
+
+.members .row {
+  padding-top: 27px;
+}
+
+.members img {
+  max-width: 100%;
+  padding-bottom: 27px;
+  border-radius: 5px;
+}
+.members p {
+  margin: auto;
+  padding-bottom: 33px;
+  min-width: 333px;
+  text-align: center;
+}
+
+.a2a_kit {
+  margin: auto;
+}
+
+span.a2a_svg {
+  height: 44px;
+  width: 44px;
+}
+
+.followme {
+  height: 77px;
+  width: 200px;
+  margin: auto;
+  cursor: pointer;
+}
+
+.ind-bio {
+  height: 211px;
+  margin: auto;
+}
+
+.ind-bio a {
+  margin: auto;
+}

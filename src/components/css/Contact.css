@@ -1,0 +1,25 @@
+#contact .jumbotron {
+  margin-top: 33px;
+}
+
+.socmed.contact img {
+  width: 55px;
+  margin-right: 5px;
+  margin-bottom: 13px;
+  border-radius: 13px;
+  background-color: white;
+}
+
+.socmed.contact img:hover {
+  background-color: darkred;
+}
+
+#contact .sendmsg {
+  margin: auto;
+  padding-bottom: 33px;
+}
+
+#contact .form-group {
+  color: darkred;
+  text-shadow: 1px 1px black;
+}

@@ -1,7 +1,3 @@
-h5 {
-  margin: 16px;
-}
-
 #music .row {
   margin: 0px;
   text-shadow: 1px 0.5px black;
@@ -208,4 +204,12 @@ h5#featured {
 
 .itunes {
   width: 106px;
+}
+
+.btn-danger:hover {
+  background-color: black;
+}
+
+.badge-danger {
+  background-color: darkred;
 }
