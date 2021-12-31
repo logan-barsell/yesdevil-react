@@ -2,16 +2,16 @@ import React from 'react';
 import './css/Music.css';
 import cover1 from './css/images/photogallery/yesdevilgas.jpg';
 import itunes from './css/images/music/itunes.png';
-import _break from './audio/Break.wav';
-import candlelight from './audio/Candlelight.wav';
-import cowboy from './audio/Cowboy_Song.wav';
-import d2d from './audio/Diamonds_to_Dust.wav';
-import dfs from './audio/DFS.wav';
-import giveItAShot from './audio/Give_it_a_Shot.wav';
-import looseScrew from './audio/Loose_Screw.wav';
-import mindPollution from './audio/Mind_Pollution.wav';
-import smokeNmirrors from './audio/Smoke_and_Mirrors.wav';
-import soSick from './audio/So_Sick.wav';
+import _break from './audio/Break.mp3';
+import candlelight from './audio/Candlelight.mp3';
+import cowboy from './audio/Cowboy_Song.mp3';
+import d2d from './audio/d2d.mp3';
+import dfs from './audio/DFS.mp3';
+import giveItAShot from './audio/Give_it_a_Shot.mp3';
+import looseScrew from './audio/Loose_Screw.mp3';
+import mindPollution from './audio/Mind_Pollution.mp3';
+import smokeNmirrors from './audio/Smoke_and_Mirrors.mp3';
+import soSick from './audio/So_Sick.mp3';
 
 
 const MusicPage = () => {
