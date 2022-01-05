@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState, createContext } from 'react';
+
 import './css/App.css';
 import TopNav from './TopNav';
 import BottomNav from './BottomNav';
@@ -9,6 +10,8 @@ import MerchPage from './Merch';
 import MediaPage from './Media';
 import BioPage from './Bio';
 import ContactPage from './Contact';
+
+export const ActiveContext = createContext();
 
 const App = () => {
   
@@ -21,9 +24,11 @@ const App = () => {
     {name:'Contact', value:'contact'}
   ];
 
+  const [activeIndex, setActiveIndex] = useState(0);
+
 
   return (
-    <>
+    <ActiveContext.Provider value={{ activeIndex, setActiveIndex}}>
       <TopNav routes={routes} />
       <Route path="/">
         <HomePage />
@@ -44,7 +49,7 @@ const App = () => {
         <ContactPage />
       </Route>
       <BottomNav routes={routes} />
-    </>
+    </ActiveContext.Provider>
   );
 }
 

@@ -1,9 +1,11 @@
-import React, {useState } from 'react';
+import React, { useContext } from 'react';
+import { ActiveContext } from './App';
 import Link from './Link';
 
 const NavLink = ({ routes, menuToggle }) => {
   
-  const [activeIndex, setActiveIndex] = useState(0);
+  // const [activeIndex, setActiveIndex] = useState(0);
+  const { setActiveIndex, activeIndex } = useContext(ActiveContext);
 
   const onNavClick = (index) => {
     setActiveIndex(index);
