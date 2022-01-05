@@ -1,5 +1,6 @@
 import React from 'react';
 
+import './css/Media.css';
 import pic1 from './css/images/photogallery/gas10.jpg';
 import pic2 from './css/images/photogallery/gas9.jpg';
 import pic3 from './css/images/photogallery/gas8.jpg';
@@ -57,6 +58,19 @@ import pic54 from './css/images/photogallery/summerfest.jpg';
 
 
 const MediaPage = () => {
+
+  //Defers video loading until after rest of the page finishes loading
+	function init() {
+    var vidDefer = document.getElementsByTagName('iframe')
+    console.log(vidDefer.length)
+    for (var i=0; i<vidDefer.length; i++) {
+      if(vidDefer[i].getAttribute('data-src')) {
+        vidDefer[i].setAttribute('src',vidDefer[i].getAttribute('data-src'))
+      }
+    } 
+  }
+  window.onload = init
+
   return (
     <div id="blog">
       
@@ -310,7 +324,7 @@ const MediaPage = () => {
               <hr/>
               <div className="date">September 19th, 2018</div>
               <div className="video embed-responsive embed-responsive-16by9">
-                <iframe className="embed-responsive-item" src="" allowfullscreen="" data-src="https://www.youtube.com/embed/xHpkknyqrRc"></iframe>
+                <iframe title="gas" className="embed-responsive-item" src="" allowFullScreen="" data-src="https://www.youtube.com/embed/xHpkknyqrRc"></iframe>
               </div>
               <div className="yt-api-cont">
                 <div className="g-ytsubscribe" data-channelid="UC_jExvqWhRlM-gBt9iEsLxA" data-layout="default" data-count="default"></div>
@@ -324,7 +338,7 @@ const MediaPage = () => {
               <hr/>
               <div className="date">September 1st, 2018</div>
               <div className="video embed-responsive embed-responsive-16by9">
-                <iframe className="embed-responsive-item" src="" allowfullscreen="" data-src="https://www.youtube.com/embed/lbOotnZlDZo"></iframe>
+                <iframe title="dfs" className="embed-responsive-item" src="" allowFullScreen="" data-src="https://www.youtube.com/embed/lbOotnZlDZo"></iframe>
               </div>
               <div className="yt-api-cont">
                 <div className="g-ytsubscribe" data-channelid="UC_jExvqWhRlM-gBt9iEsLxA" data-layout="default" data-count="default"></div>
@@ -341,7 +355,7 @@ const MediaPage = () => {
               <hr/>
               <div className="date">September 19th, 2019</div>
               <div className="video embed-responsive embed-responsive-16by9">
-                <iframe className="embed-responsive-item" src="" allowfullscreen="" data-src="https://www.youtube.com/embed/nJjggDYFOW8"></iframe>
+                <iframe  title="09/19/19" className="embed-responsive-item" src="" allowFullScreen="" data-src="https://www.youtube.com/embed/nJjggDYFOW8"></iframe>
               </div>
               <div className="yt-api-cont">
                 <div className="g-ytsubscribe" data-channelid="UC_jExvqWhRlM-gBt9iEsLxA" data-layout="default" data-count="default"></div>
@@ -356,7 +370,7 @@ const MediaPage = () => {
               <hr/>
               <div className="date">September 6th, 2019</div>
               <div className="video embed-responsive embed-responsive-16by9">
-                <iframe className="embed-responsive-item" src="" allowfullscreen="" data-src="https://www.youtube.com/embed/EeVy2lFg0r0"></iframe>
+                <iframe title="09/06/19" className="embed-responsive-item" src="" allowFullScreen="" data-src="https://www.youtube.com/embed/EeVy2lFg0r0"></iframe>
               </div>
               <div className="yt-api-cont">
                 <div className="g-ytsubscribe" data-channelid="UC_jExvqWhRlM-gBt9iEsLxA" data-layout="default" data-count="default"></div>
@@ -372,7 +386,7 @@ const MediaPage = () => {
               <hr/>
               <div className="date">February 8th, 2019</div>
               <div className="video embed-responsive embed-responsive-16by9">
-                <iframe className="embed-responsive-item" src="" allowfullscreen="" data-src="https://www.youtube.com/embed/1cYskFQ3NNw"></iframe>
+                <iframe title="whisky" className="embed-responsive-item" src="" allowFullScreen="" data-src="https://www.youtube.com/embed/1cYskFQ3NNw"></iframe>
               </div>
               <div className="yt-api-cont">
                 <div className="g-ytsubscribe" data-channelid="UC_jExvqWhRlM-gBt9iEsLxA" data-layout="default" data-count="default"></div>
@@ -387,7 +401,7 @@ const MediaPage = () => {
               <hr/>
               <div className="date">January 5th, 2019</div>
               <div className="video embed-responsive embed-responsive-16by9">
-                <iframe className="embed-responsive-item" src="" allowfullscreen="" data-src="https://www.youtube.com/embed/pKE3DOTvnEA"></iframe>
+                <iframe title="honey" className="embed-responsive-item" src="" allowFullScreen="" data-src="https://www.youtube.com/embed/pKE3DOTvnEA"></iframe>
               </div>
               <div className="yt-api-cont">
                 <div className="g-ytsubscribe" data-channelid="UC_jExvqWhRlM-gBt9iEsLxA" data-layout="default" data-count="default"></div>
@@ -401,7 +415,7 @@ const MediaPage = () => {
               <hr/>
               <div className="date">January 5th, 2019</div>
               <div className="video embed-responsive embed-responsive-16by9">
-                <iframe className="embed-responsive-item" src="" allowfullscreen="" data-src="https://www.youtube.com/embed/Af0imyA0G_I"></iframe>
+                <iframe title="honey2" className="embed-responsive-item" src="" allowFullScreen="" data-src="https://www.youtube.com/embed/Af0imyA0G_I"></iframe>
               </div>
               <div className="yt-api-cont">
                 <div className="g-ytsubscribe" data-channelid="UC_jExvqWhRlM-gBt9iEsLxA" data-layout="default" data-count="default"></div>
@@ -415,7 +429,7 @@ const MediaPage = () => {
               <hr/>
               <div className="date">January 5th, 2019</div>
               <div className="video embed-responsive embed-responsive-16by9">
-                <iframe className="embed-responsive-item" src="" allowfullscreen="" data-src="https://www.youtube.com/embed/0ihYhyVNZGs"></iframe>
+                <iframe title="honey3" className="embed-responsive-item" src="" allowFullScreen="" data-src="https://www.youtube.com/embed/0ihYhyVNZGs"></iframe>
               </div>
               <div className="yt-api-cont">
                 <div className="g-ytsubscribe" data-channelid="UC_jExvqWhRlM-gBt9iEsLxA" data-layout="default" data-count="default"></div>
@@ -429,7 +443,7 @@ const MediaPage = () => {
               <hr/>
               <div className="date">July 13th, 2018</div>
               <div className="video embed-responsive embed-responsive-16by9">
-                <iframe className="embed-responsive-item" src="" allowfullscreen="" data-src="https://www.youtube.com/embed/pUR7AwCMr0U"></iframe>
+                <iframe title="whisky2" className="embed-responsive-item" src="" allowFullScreen="" data-src="https://www.youtube.com/embed/pUR7AwCMr0U"></iframe>
               </div>
               <div className="yt-api-cont">
                 <div className="g-ytsubscribe" data-channelid="UC_jExvqWhRlM-gBt9iEsLxA" data-layout="default" data-count="default"></div>

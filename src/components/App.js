@@ -20,6 +20,8 @@ const App = () => {
     {name:'About Us', value:'/aboutus'},
     {name:'Contact', value:'contact'}
   ];
+
+
   return (
     <>
       <TopNav routes={routes} />

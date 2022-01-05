@@ -86,12 +86,7 @@ const BottomNav = ({ routes }) => {
             <div className="col-md-5">
               <h5 className="text-uppercase">Links</h5>
               <ul id="footer-links" className="list-unstyled">
-                <li><NavLink routes={routes} /></li>
-                {/* <li><a href="#!" className="nav-item link2music">Music</a></li>
-                <li><a href="#!" className="nav-item link2merch">Store</a></li>
-                <li><a href="#!" className="nav-item link2blog">Media</a></li>
-                <li><a href="#!" className="nav-item link2aboutus">About Us</a></li>
-                <li><a href="#!" className="nav-item link2contact">Contact</a></li> */}
+                <li><NavLink routes={routes} menuToggle={() => null} /></li>
               </ul>
             </div>
           </div>

@@ -142,6 +142,10 @@ h5#featured {
   }
 }
 
+.album-tab a:hover {
+  color: white;
+}
+
 .alboom {
   font-style: italic;
 }
@@ -197,10 +201,6 @@ h5#featured {
 .buyalbum {
   margin: 29px 29%;
 }
-/*
-#songs button {
-	background-color: #ec7a88;
-}*/
 
 .itunes {
   width: 106px;
@@ -212,4 +212,9 @@ h5#featured {
 
 .badge-danger {
   background-color: darkred;
+  cursor: pointer;
+}
+
+#songs {
+  max-width: 100%;
 }

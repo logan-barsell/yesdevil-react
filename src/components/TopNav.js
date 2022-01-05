@@ -1,23 +1,61 @@
-import React from 'react';
+import React, {useState, useEffect, useRef} from 'react';
 import NavLink from './NavLink';
+import {Collapse} from 'bootstrap';
 
 import './css/TopNav.css';
 import cart from './css/images/merch/cart.png';
 
 const TopNav = ({ routes }) => {
 
+  const ref = useRef();
+  const [toggle, setToggle] = useState(false);
+
+  const menuToggle = () => {
+    setToggle(toggle => !toggle);
+  }
+  
+  useEffect(() => {
+    const menuCollapse = document.getElementById('menu');
+    const bsCollapse = new Collapse(menuCollapse, {
+      toggle: false
+    });
+    toggle ? bsCollapse.show() : bsCollapse.hide();
+
+		const onBodyClick = (event) => {
+			if(ref.current && ref.current.contains(event.target)) {
+				return;
+			}
+      setToggle(false);
+		};
+    
+		document.body.addEventListener('click', onBodyClick);
+
+		return () => {
+			document.body.removeEventListener('click', onBodyClick);
+		};
+
+	});
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-light sticky-top"><a className="navbar-brand yesdevil hvr-grow" href=".">YES DEVIL</a>
-      <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"><span className="navbar-toggler-icon"></span></button>
-      <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div className="navbar-nav justify-content-around">
-          <NavLink routes={routes} />
-        <a href="#!" className="nav-item nav-link snipcart-checkout">
-          <button type="button" className="btn btn-danger cart-button" data-toggle="modal" data-target="#cart">
-           Cart <img src={cart} alt=""/>
+    <nav ref={ref} className="navbar navbar-expand-lg navbar-light sticky-top">
+      <div className="container-fluid">
+        <a className="navbar-brand yesdevil hvr-grow" href=".">YES DEVIL</a>
+        <button 
+          className="navbar-toggler" 
+          type="button" 
+          onClick={() => menuToggle()}
+          >
+            <span className="navbar-toggler-icon"></span>
           </button>
-        </a>
+        <div className="collapse navbar-collapse" id="menu">
+          <div className="navbar-nav justify-content-around">
+            <NavLink routes={routes} menuToggle={menuToggle} />
+          <a href="#!" className="nav-item nav-link snipcart-checkout">
+            <button type="button" className="btn btn-danger cart-button" data-toggle="modal" data-target="#cart">
+            Cart <img src={cart} alt=""/>
+            </button>
+          </a>
+          </div>
         </div>
       </div>
     </nav>
