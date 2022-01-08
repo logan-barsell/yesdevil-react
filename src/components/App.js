@@ -25,10 +25,10 @@ const App = () => {
   ];
 
   const [activeIndex, setActiveIndex] = useState(0);
-
+  const [toggle, setToggle] = useState(false);
 
   return (
-    <ActiveContext.Provider value={{ activeIndex, setActiveIndex}}>
+    <ActiveContext.Provider value={{ activeIndex, setActiveIndex, toggle, setToggle}}>
       <TopNav routes={routes} />
       <Route path="/">
         <HomePage />

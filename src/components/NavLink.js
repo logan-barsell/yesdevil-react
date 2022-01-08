@@ -4,12 +4,13 @@ import Link from './Link';
 
 const NavLink = ({ routes, menuToggle }) => {
   
-  // const [activeIndex, setActiveIndex] = useState(0);
-  const { setActiveIndex, activeIndex } = useContext(ActiveContext);
+  const { setActiveIndex, activeIndex, toggle } = useContext(ActiveContext);
 
   const onNavClick = (index) => {
     setActiveIndex(index);
-    menuToggle();
+    if (toggle === true) {
+      menuToggle();
+    }
     window.scrollTo({ top: 0});
   };
 

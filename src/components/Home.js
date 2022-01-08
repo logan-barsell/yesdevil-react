@@ -11,16 +11,16 @@ import slide7 from './css/images/home/glasshouse.jpg';
 const HomePage = () => {
   return (
     <div id="home">
-      <div className="carousel slide parallax" id="carouselExampleIndicators" data-ride="carousel">
-        <ol className="carousel-indicators">
-          <li className="active" data-target="#carouselExampleIndicators" data-slide-to="0"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
-        </ol>
+      <div className="carousel slide parallax" id="carouselExampleIndicators" data-bs-ride="carousel">
+        <div className="carousel-indicators">
+          <button type="button" className="active" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"></button>
+        </div>
         <div className="carousel-inner">
           <div className="carousel-item active"><img className="d-block w-100" src={slide1} alt="First slide"/></div>
           <div className="carousel-item"><img className="d-block w-100" src={slide2} alt="Second slide"/></div>
@@ -29,8 +29,17 @@ const HomePage = () => {
           <div className="carousel-item"><img className="d-block w-100" src={slide5} alt="Fifth slide"/></div>
           <div className="carousel-item"><img className="d-block w-100" src={slide6} alt="Sixth slide"/></div>
           <div className="carousel-item"><img className="d-block w-100" src={slide7} alt="Seventh slide"/></div>
-          
-        </div><a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev"><span className="carousel-control-prev-icon" aria-hidden="true"></span><span className="sr-only">Previous</span></a><a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next"><span className="carousel-control-next-icon" aria-hidden="true"></span><span className="sr-only">Next</span></a>
+        </div>
+        <button type="button" className="carousel-control-prev" href="#carouselExampleIndicators" data-bs-slide="prev">
+          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span className="visually-hidden">Previous</span>
+        </button>
+        <button type="button" className="carousel-control-next" href="#carouselExampleIndicators" data-bs-slide="next">
+          <span className="carousel-control-next-icon" aria-hidden="true"></span>
+          <span className="visually-hidden">Next</span>
+        </button>
+
+        
       </div>
 
 

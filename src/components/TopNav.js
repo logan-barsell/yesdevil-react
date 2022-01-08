@@ -1,6 +1,7 @@
-import React, {useState, useEffect, useRef} from 'react';
+import React, {useContext, useEffect, useRef} from 'react';
 import NavLink from './NavLink';
 import {Collapse} from 'bootstrap';
+import { ActiveContext } from './App';
 
 import './css/TopNav.css';
 import cart from './css/images/merch/cart.png';
@@ -8,7 +9,7 @@ import cart from './css/images/merch/cart.png';
 const TopNav = ({ routes }) => {
 
   const ref = useRef();
-  const [toggle, setToggle] = useState(false);
+  const { toggle, setToggle } = useContext(ActiveContext);
 
   const menuToggle = () => {
     setToggle(toggle => !toggle);

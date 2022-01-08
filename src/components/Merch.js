@@ -93,7 +93,7 @@ const MerchPage = () => {
           </div>
         </div>
 
-        <div className="col-sm-6 ghost"></div>
+        {/* <div className="col-sm-6 ghost"></div> */}
 
       </div>
     </div>
