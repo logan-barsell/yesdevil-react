@@ -24,8 +24,7 @@ h5.text-center.row {
 
 #blog .main.nav-tabs {
   border-bottom: 1px solid white;
-  background-color: black;
-  opacity: 0.8;
+  background-color: rgba(0, 0, 0, 0.8);
   position: sticky;
   z-index: 1;
   top: 95.5px;
@@ -34,11 +33,13 @@ h5.text-center.row {
 
 #blog .nav-tabs .nav-link.active {
   border-color: transparent;
+  background-color: transparent;
   color: darkred;
   text-shadow: 1px 0.5px #3b0600;
 }
 #blog .nav-tabs .nav-link:hover {
   border-color: transparent;
+  background-color: transparent;
   color: darkred;
   text-shadow: 1px 0.5px #3b0600;
 }

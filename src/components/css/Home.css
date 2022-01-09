@@ -10,10 +10,9 @@
 }
 
 .nav.upcomingshows {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.8);
   color: darkred;
   box-shadow: 0px -1px 13px black;
-  opacity: 0.8;
   border-bottom: white 0.5px solid;
   text-shadow: 1px 1px #3b0600;
 }

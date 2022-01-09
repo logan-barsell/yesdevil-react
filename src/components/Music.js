@@ -29,6 +29,16 @@ const MusicPage = () => {
     );
   });
 
+  // const selectedContent = () => {
+  //   if (activeTab === 0) {
+  //     return (
+  //       <ul className="list-group justify-content-center" id="songs">
+  //           <Songs songs={songs} />
+  //         </ul>
+  //     );
+  //   }
+  // };
+
   
   return (
     <div id="music">
@@ -62,17 +72,23 @@ const MusicPage = () => {
             {tabSelection}
           </ul>
 
-          <ul className="list-group justify-content-center" id="songs">
+          {activeTab === 0 && 
+            <ul className="list-group justify-content-center" id="songs">
             <Songs songs={songs} />
           </ul>
+          }
+          
+          {activeTab === 1 && 
+            <ul className="list-group" id="lyrics">
+              <Lyrics songs={songs} />
+            </ul>
+          }
 
-          <ul className="list-group" id="lyrics">
-            <Lyrics songs={songs} />
-          </ul>
-
-          <div id="credits">
-            <SongCredits />
-          </div>
+          {activeTab === 2 &&
+            <div id="credits">
+              <SongCredits />
+            </div>
+          }
 
         </div>
       </div>

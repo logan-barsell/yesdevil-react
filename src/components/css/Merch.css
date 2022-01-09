@@ -1,12 +1,11 @@
 .nav.merchstore {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.8);
   border-bottom: 0.5px solid white;
   box-shadow: 0px -1px 13px black;
   position: sticky;
   z-index: 1;
   top: 95.5px;
   width: 100%;
-  opacity: 0.8;
   color: darkred;
 }
 

@@ -21,6 +21,10 @@ h5 {
   background-color: black;
 }
 
+.nav-link {
+  color: white;
+}
+
 /* HOVER CSS */
 
 .hvr-sink {

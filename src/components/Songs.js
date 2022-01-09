@@ -8,7 +8,7 @@ const Songs = ({ songs }) => {
 
   const renderedSongs = songs.map((song) => {
     return (
-      <li key={song.title} className="list-group-item justify-content-between d-flex align-items-center">
+      <li key={song.title} className="list-group-item justify-content-between align-items-center">
 
         <div className="shit">
 
