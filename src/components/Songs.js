@@ -14,7 +14,7 @@ const Songs = ({ songs }) => {
 
           <div className="song-title">{song.title}</div>
           <div>
-            <audio controls="" controlsList="nodownload">
+            <audio controls controlsList="nodownload">
               <source src={song.audio} type="audio/mpeg"/>               Your browser does not support the audio tag.
             </audio>
           </div>
