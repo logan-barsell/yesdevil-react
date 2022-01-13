@@ -106,6 +106,12 @@ footer h5 {
   text-shadow: 1px 1px #3b0600;
 }
 
+#footer-links .nav-link {
+  padding: 0px;
+  width: fit-content;
+  margin: auto;
+}
+
 #footer-links li {
   padding: 0px 16px;
   color: white;
