@@ -1,10 +1,28 @@
 #contact .jumbotron {
   margin-top: 33px;
+  margin-bottom: 2rem;
+  background-color: #e9ecef;
+  border-radius: 0.3rem;
+  padding: 4rem 2rem;
+}
+
+@media only screen and (max-width: 576px) {
+  #contact .jumbotron {
+    padding: 2rem 1rem;
+  }
+}
+
+#contact a {
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
 }
 
 .socmed.contact img {
   width: 55px;
-  margin-right: 5px;
+  margin-right: 9px;
   margin-bottom: 13px;
   border-radius: 13px;
   background-color: white;
@@ -22,4 +40,9 @@
 #contact .form-group {
   color: darkred;
   text-shadow: 1px 1px black;
+  margin-bottom: 1rem;
+}
+
+#contact label {
+  margin-bottom: 0.5rem;
 }

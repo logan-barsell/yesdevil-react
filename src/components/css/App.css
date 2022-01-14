@@ -25,6 +25,16 @@ h5 {
   color: white;
 }
 
+.form-control:focus {
+  border-color: darkred;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+.has-error .form-control:focus {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
 /* HOVER CSS */
 
 .hvr-sink {

@@ -14,7 +14,7 @@ const ContactPage = () => {
     <div className="container" id="contact">
       <div className="row">
         <div className="col-lg">
-          <div className="jumbotron">
+          <div className="jumbotron p-5">
             <h5>Contact Information:</h5>
             <hr className="my-4"/>
             <p><img src={phone} alt=""/><a href="tel:+9252627761">925-262-7761</a></p>
@@ -43,7 +43,9 @@ const ContactPage = () => {
               <label htmlFor="message">Message</label>
               <textarea className="form-control" id="message" name="message" rows="3" placeholder="Enter Message"></textarea>
             </div>
-            <button className="btn btn-primary btn-block btn-danger" type="submit" value="send">Submit</button>
+            <div className="d-grid gap-2">
+              <button className="btn btn-primary btn-danger" type="submit" value="send">Submit</button>
+            </div>
           </form>
         </div>
       </div>
