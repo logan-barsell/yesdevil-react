@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import './css/Bio.css';
 import vango from './css/images/logos/vango.png';
 import logan from './css/images/aboutus/logan0.jpg'
 import matt from './css/images/aboutus/matt0.jpg';
 import eyan from './css/images/aboutus/eyan0.jpg';
+import { useEffect } from 'react/cjs/react.development';
 
 
 const BioPage = () => {
@@ -26,6 +27,17 @@ const BioPage = () => {
   //   }
   // }
 
+  useEffect(() => {
+    const loadScript = src => {
+      const tag = document.createElement('script');
+      tag.async = false;
+      tag.src = src;
+      const body = document.getElementsByTagName('body')[0];
+      body.appendChild(tag);
+    }
+    loadScript('https://static.addtoany.com/menu/page.js');
+  },[])
+
   return (
     <div id="aboutus">
 
@@ -43,7 +55,7 @@ const BioPage = () => {
           </div>
 
           <div className="row container justify-content-center bio">
-            <p><span>We are <span className="yesdevil">YES DEVIL</span></span> , a hard rock band currently based out of the San Francisco Bay Area. Our sound is shaped by a wide range of influences from a variety of genres. From the bluesy origins of rock 'n' roll to in your face heavy metal, we have a modern take on the classNameic sounds that have shaped rock music into what it is today. After releasing our first EP, <a href="https://itunes.apple.com/us/album/get-damned-ep/924263735" target="_blank">Get Damned</a>, under our original band name and line-up (<a href="https://www.reverbnation.com/se7endead">Se7en Dead</a>), a series of break-ups and line-up changes prompted us to rebrand ourselves a handful of times before finally re-emerging as Yes Devil. With our new full length album, <a className="link2music">The High Cost of Living Low</a>, we tie together years of experiences we've shared together as a band. These songs embody the essence of these experiences, the lives we've lived, the people we've met, and lessons we've learned. </p>
+            <p><span>We are <span className="yesdevil">YES DEVIL</span></span> , a hard rock band currently based out of the San Francisco Bay Area. Our sound is shaped by a wide range of influences from a variety of genres. From the bluesy origins of rock 'n' roll to in your face heavy metal, we have a modern take on the classic sounds that have shaped rock music into what it is today. After releasing our first EP, <a href="https://itunes.apple.com/us/album/get-damned-ep/924263735" target="_blank">Get Damned</a>, under our original band name and line-up (<a href="https://www.reverbnation.com/se7endead">Se7en Dead</a>), a series of break-ups and line-up changes prompted us to rebrand ourselves a handful of times before finally re-emerging as Yes Devil. With our new full length album, <a className="link2music">The High Cost of Living Low</a>, we tie together years of experiences we've shared together as a band. These songs embody the essence of these experiences, the lives we've lived, the people we've met, and lessons we've learned. </p>
           </div>
 
         </div>
@@ -63,12 +75,12 @@ const BioPage = () => {
 
           <div className="container">
 
-            <div className="logan row container justify-content-center">
+            <div className="logan row justify-content-center">
               <div className="col-auto"><img src={logan} alt=""/></div>
               <div className="col-auto ind-bio">
                 <div className="row">
                   <p>
-                    Logan Barsell - Vocals and Guitar
+                    Logan Barsell - Vocals & Guitar
                   </p>
                 </div>
                 <div className="row">
@@ -79,7 +91,7 @@ const BioPage = () => {
 
             <hr/>
 
-            <div className="matt row container justify-content-center">
+            <div className="matt row justify-content-center">
               <div className="col-auto"><img src={matt} alt=""/></div>
               <div className="col-auto ind-bio">
                 <div className="row">
@@ -93,7 +105,7 @@ const BioPage = () => {
 
             <hr/>
 
-            <div className="eyan row  container justify-content-center">
+            <div className="eyan row justify-content-center">
               <div className="col-auto"><img src={eyan} alt="" /></div>
               <div className="col-auto ind-bio">
                 <div className="row">

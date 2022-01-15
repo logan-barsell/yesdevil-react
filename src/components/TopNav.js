@@ -52,7 +52,7 @@ const TopNav = ({ routes }) => {
           <div className="navbar-nav justify-content-around">
             <NavLink routes={routes} menuToggle={menuToggle} />
           <a href="#!" className="nav-item nav-link snipcart-checkout">
-            <button type="button" className="btn btn-danger cart-button" data-toggle="modal" data-target="#cart">
+            <button type="button" className="btn btn-danger cart-button" data-bs-toggle="modal" data-bs-target="#cart">
             Cart <img src={cart} alt=""/>
             </button>
           </a>

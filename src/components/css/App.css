@@ -13,6 +13,10 @@ h5 {
   margin: 16px;
 }
 
+.nav {
+  z-index: 100;
+}
+
 .btn-danger {
   background-color: darkred;
 }
@@ -25,6 +29,14 @@ h5 {
   color: white;
 }
 
+p a {
+  text-decoration: none;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
 .form-control:focus {
   border-color: darkred;
   box-shadow: none;
@@ -35,9 +47,13 @@ h5 {
   -webkit-box-shadow: none;
 }
 
+hr {
+  background-color: black;
+}
+
 /* HOVER CSS */
 
-.hvr-sink {
+#menu .hvr-sink {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
@@ -50,7 +66,7 @@ h5 {
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-.hvr-sink:hover,
+#menu .hvr-sink:hover,
 .hvr-sink:focus,
 .hvr-sink:active {
   -webkit-transform: translateY(8px);

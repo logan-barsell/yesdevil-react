@@ -15,11 +15,17 @@ const BottomNav = ({ routes }) => {
   return (
     <>
       <nav id="bottomNav" className="navbar navbar-light justify-content-around">
-
              {/* Button trigger modal */}
-        <button type="button" className="btn btn-danger" data-toggle="modal" data-target="#newsletterModal">
-          Subscribe to our Newsletter
-        </button>
+        <div className="col-md-7">
+          <div className="row justify-content-center">
+            <div className="col-auto">
+              <button type="button" className="btn btn-danger" data-toggle="modal" data-target="#newsletterModal">
+                Subscribe to our Newsletter
+              </button>
+            </div>
+          </div>
+        </div>
+          
 
         {/* Modal  */}
         <div className="modal fade" id="newsletterModal" tabIndex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -52,7 +58,7 @@ const BottomNav = ({ routes }) => {
         </div>
 
 
-        <button
+        {/* <button
             className="snipcart-add-item btn btn-outline-light beer"
             data-item-id="5"
             data-item-name="Buy a beer for the band!"
@@ -64,9 +70,9 @@ const BottomNav = ({ routes }) => {
             data-item-image="../static/css/images/logos/beer.png"
             >
             <img src={beer} alt=""/>Buy us a BEER!
-        </button>
+        </button> */}
 
-        <div className="iconsNav">
+        <div className="iconsNav col-auto justify-content-center">
           <a className="" target="_blank" rel="noreferrer" href="https://www.facebook.com/YESDEVIL/"><img className="hvr-grow" src={facebook} alt="" /></a>
           <a className="w" target="_blank" rel="noreferrer" href="https://www.instagram.com/yes_devil/?hl=en"><img className="hvr-grow" src={insta} alt=""/></a>
           <a className="" target="_blank" rel="noreferrer" href="https://www.youtube.com/channel/UC_jExvqWhRlM-gBt9iEsLxA"><img className="hvr-grow" src={youtube} alt=""/></a>
@@ -92,7 +98,7 @@ const BottomNav = ({ routes }) => {
           </div>
         </div>
         {/* Copyright */}
-        <div className="footer-copyright py-3 text-center bg-light">© <script>document.write(new Date().getFullYear())</script> Copyright: <a href=".">yesdevil.com</a></div>
+        <div className="footer-copyright py-3 text-center bg-light">© {new Date().getFullYear()} Copyright: <a href=".">yesdevil.com</a></div>
       </footer>
     </>
   );

@@ -9,6 +9,12 @@
   color: darkred;
 }
 
+@media only screen and (max-width: 991px) {
+  .nav.merchstore {
+    top: 88px;
+  }
+}
+
 #merch {
   font-size: 18px;
 
@@ -22,7 +28,6 @@
 }
 
 #merch h5 {
-  margin-top: 24px;
   color: darkred;
   text-shadow: 1px 1px #3b0600;
 }

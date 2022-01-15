@@ -16,9 +16,10 @@ const NavLink = ({ routes, menuToggle }) => {
 
   const renderedNavItems = routes.map((route, index) => {
     const active = index === activeIndex ? 'active' : '';
+    const hvrSink = !toggle ? 'hvr-sink' : '';
 
     return (
-      <Link key={index} href={route.value} className={`nav-item nav-link ${active}`} onNavClick={() => onNavClick(index)} >{route.name}</Link>
+      <Link key={index} href={route.value} className={`nav-item nav-link ${hvrSink} ${active}`} onNavClick={() => onNavClick(index)} >{route.name}</Link>
     );
   });
 

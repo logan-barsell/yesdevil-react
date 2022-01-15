@@ -12,15 +12,6 @@ const HomePage = () => {
   return (
     <div id="home">
       <div className="carousel slide parallax" id="carouselExampleIndicators" data-bs-ride="carousel">
-        <div className="carousel-indicators">
-          <button type="button" className="active" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"></button>
-        </div>
         <div className="carousel-inner">
           <div className="carousel-item active"><img className="d-block w-100" src={slide1} alt="First slide"/></div>
           <div className="carousel-item"><img className="d-block w-100" src={slide2} alt="Second slide"/></div>
