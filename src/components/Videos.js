@@ -3,17 +3,16 @@ import { musicVideos, liveVideos, blogVideos } from './VideoDetails';
  
 const Videos = () => {
 
-  const renderMusicVideos = musicVideos.map(video => {
-    // const divider = video.id === 0 ? null : <hr/>;
+  const renderVideos = (video) => {
     return (
-      <div key={`mv${video.id}`} className={`mv${video.id}`}>
+      <div key={`${video.type}${video.id}`}>
         {video.id === 0 ? null : <hr/>}
         <div className="blog-post">
           <div className="title">{video.title}</div>
           <hr/>
           <div className="date">{video.date}</div>
           <div className="video embed-responsive embed-responsive-16by9">
-            <iframe title={`mv${video.id}`} className="embed-responsive-item" src={video.url} allowFullScreen></iframe>
+            <iframe title={`${video.type}${video.id}`} className="embed-responsive-item" src={video.url} allowFullScreen></iframe>
           </div>
           <div className="yt-api-cont">
             <div className="g-ytsubscribe" data-channelid="UC_jExvqWhRlM-gBt9iEsLxA" data-layout="default" data-count="default"></div>
@@ -21,46 +20,18 @@ const Videos = () => {
         </div>
       </div>
     );
+  };
+
+  const renderMusicVideos = musicVideos.map(video => {
+    return renderVideos(video);
   });
 
   const renderLiveVideos = liveVideos.map(video => {
-    const divider = video.id === 0 ? null : <hr/>;
-    return (
-      <div key={`lv${video.id}`}>
-        {divider}
-        <div className="blog-post">
-          <div className="title">{video.title}</div>
-          <hr/>
-          <div className="date">{video.date}</div>
-          <div className="video embed-responsive embed-responsive-16by9">
-            <iframe title={`lv${video.id}`} className="embed-responsive-item" src={video.url} allowFullScreen></iframe>
-          </div>
-          <div className="yt-api-cont">
-            <div className="g-ytsubscribe" data-channelid="UC_jExvqWhRlM-gBt9iEsLxA" data-layout="default" data-count="default"></div>
-          </div>
-        </div>
-      </div>
-    );
+    return renderVideos(video);
   });
 
   const renderBlogVideos = blogVideos.map(video => {
-    const divider = video.id === 0 ? null : <hr/>;
-    return (
-      <div key={`bv${video.id}`}>
-        {divider}
-        <div key={`bv${video.id}`} className="blog-post">
-          <div className="title">{video.title}</div>
-          <hr/>
-          <div className="date">{video.date}</div>
-          <div className="video embed-responsive embed-responsive-16by9">
-            <iframe title={`bv${video.id}`} className="embed-responsive-item" src={video.url} allowFullScreen></iframe>
-          </div>
-          <div className="yt-api-cont">
-            <div className="g-ytsubscribe" data-channelid="UC_jExvqWhRlM-gBt9iEsLxA" data-layout="default" data-count="default"></div>
-          </div>
-        </div>
-      </div>
-    );
+    return renderVideos(video);
   });
 
   return (
@@ -83,6 +54,7 @@ const Videos = () => {
           </button>
         </li>
       </ul>
+
 
       <div className="tab-content">
 

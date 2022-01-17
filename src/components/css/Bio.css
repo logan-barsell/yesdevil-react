@@ -62,9 +62,14 @@
   padding-bottom: 27px;
   border-radius: 5px;
 }
+
+.members h4 {
+  text-align: center;
+  color: darkred;
+  text-shadow: 2px 1px black;
+}
 .members p {
   margin: auto;
-  padding-bottom: 33px;
   min-width: 333px;
   text-align: center;
 }

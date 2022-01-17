@@ -41,13 +41,13 @@ h5.text-center {
   border-color: transparent;
   background-color: transparent;
   color: darkred;
-  text-shadow: 1px 0.5px #3b0600;
+  text-shadow: 2px 0.5px black;
 }
 #blog .nav-link:hover {
   border-color: transparent;
   background-color: transparent;
   color: darkred;
-  text-shadow: 1px 0.5px #3b0600;
+  text-shadow: 2px 0.5px black;
 }
 
 .img-thumbnail {

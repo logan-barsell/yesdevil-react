@@ -111,7 +111,7 @@ footer {
 
 footer h5 {
   color: darkred;
-  text-shadow: 1px 1px #3b0600;
+  text-shadow: 2px 0px black;
 }
 
 #footer-links .nav-link {
@@ -127,6 +127,7 @@ footer h5 {
 
 #footer-links li a:hover {
   color: darkred;
+  text-shadow: 1px 1px black;
 }
 
 .footer-copyright {
@@ -140,4 +141,5 @@ footer h5 {
 
 a.nav-item.active {
   color: darkred;
+  text-shadow: 1px 1px black;
 }
