@@ -2,6 +2,7 @@ import './css/Bio.css';
 import vango from './css/images/logos/vango.png';
 
 import React, { useEffect } from 'react';
+import SecondaryNav from './SecondaryNav';
 import { members } from './Members';
 
 
@@ -71,11 +72,7 @@ const BioPage = () => {
 
         <div className="members">
 
-          <ul className={`nav membersNav sticky justify-content-center`}>
-            <li className="nav-item">
-              <h5>Members</h5>
-            </li>
-          </ul>
+          <SecondaryNav label="Members" />
 
            <br/>
 

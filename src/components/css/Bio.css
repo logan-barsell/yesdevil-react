@@ -27,32 +27,6 @@
   font-size: 27px;
 }
 
-.membersNav {
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  color: darkred;
-  text-shadow: 1px 1px #3b0600;
-  border-bottom: 0.5px solid white;
-}
-
-.sticky {
-  position: sticky;
-  top: 95.5px;
-}
-
-@media only screen and (max-width: 992px) {
-  .sticky {
-    position: sticky;
-    top: 87px;
-  }
-}
-
-.members h5 {
-  color: darkred;
-  text-align: center;
-  text-shadow: 1px 1px #3b0600;
-}
-
 .members .row {
   padding-top: 27px;
 }

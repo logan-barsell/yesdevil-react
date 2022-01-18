@@ -1,20 +1,19 @@
-import React from 'react';
-
 import './css/Merch.css';
 import bracelet from './css/images/merch/bracelet1.jpg';
 import shirt from './css/images/merch/shirt1.jpg';
 import shirt2 from './css/images/aboutus/bio.jpeg';
 
+import React from 'react';
+import SecondaryNav from './SecondaryNav';
+
+
+
 const MerchPage = () => {
   return (
     <div id="merch">
-
       
-      <ul className="nav merchstore justify-content-center">
-        <li className="nav-item">
-          <h5 className="text-center">Merchandise</h5>
-        </li>
-      </ul>
+      <SecondaryNav label='Merchandise' />
+
       <div className="row container" id="product-list">
 
 

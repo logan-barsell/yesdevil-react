@@ -1,12 +1,13 @@
+import './css/Music.css';
+import cover1 from './css/images/photogallery/yesdevilgas.jpg';
+import itunes from './css/images/music/itunes.png';
+
 import React, { useState } from 'react';
+import SecondaryNav from './SecondaryNav';
 import Songs from './Songs';
 import Lyrics from './Lyrics';
 import { songs } from './SongInfo';
 import SongCredits from './SongCredits';
-
-import './css/Music.css';
-import cover1 from './css/images/photogallery/yesdevilgas.jpg';
-import itunes from './css/images/music/itunes.png';
 
 const MusicPage = () => {
   
@@ -42,11 +43,9 @@ const MusicPage = () => {
   
   return (
     <div id="music">
-      <ul className="nav thcoll justify-content-center">
-        <li className="nav-item">
-          <h5 className="text-center" id="alboom">The High Cost of Living Low </h5>
-        </li>
-      </ul>
+
+      <SecondaryNav label='The High Cost of Living Low' />
+
       <div className="row justify-content-center">
         <div className="col img-container">
           <img id="album-cover" src={cover1} alt=""/>

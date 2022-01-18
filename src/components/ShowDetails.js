@@ -11,13 +11,16 @@ export const shows = [
     date: '10/5, 10/12, 10/19, 10/26, 11/4',
     time: '7pm-10/12pm',
     price: '$10 entry only, $30/35 haunted house pass',
-    itemId: null,
-    itemPrice: null,
-    itemWeight: null,
-    itemUrl: null,
-    itemDesc: null,
-    isShippable: null,
-    ticketLink: 'https://piratesofemerson.fearticket.com/event/orderticket/eventid/351'
+    ticketLink: 'https://piratesofemerson.fearticket.com/event/orderticket/eventid/351',
+    snipcartData: {
+      label: null,
+      itemId: null,
+      itemPrice: null,
+      itemWeight: null,
+      itemUrl: null,
+      itemDesc: null,
+      isShippable: null
+    }
   },
   {
     id: 1,
@@ -27,12 +30,15 @@ export const shows = [
     date: '5/25/19',
     time: '8:00pm',
     price: '$10',
-    itemId: '4',
-    itemPrice: '10.00',
-    itemWeight: '3',
-    itemUrl: 'http://www.yesdevil.com',
-    itemDesc: 'See Yes Devil LIVE @ The Study. ***IMPORTANT: All presale tickets ordered online will be available at WILL CALL under the name given (MUST HAVE ID TO PROVE IDENTITY) as soon as doors open the day of the show.***',
-    isShippable: false,
-    ticketLink: null
+    ticketLink: null,
+    snipcartData: {
+      label: 'Get Tickets',
+      itemId: '4',
+      itemPrice: '10.00',
+      itemWeight: '3',
+      itemUrl: 'http://www.yesdevil.com',
+      itemDesc: 'See Yes Devil LIVE @ The Study. ***IMPORTANT: All presale tickets ordered online will be available at WILL CALL under the name given (MUST HAVE ID TO PROVE IDENTITY) as soon as doors open the day of the show.***',
+      isShippable: false
+    }
   }
 ];
