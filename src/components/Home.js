@@ -1,4 +1,3 @@
-import React from 'react';
 import './css/Home.css';
 import slide1 from './css/images/home/grungy.jpg';
 import slide2 from './css/images/home/crueish.jpg';
@@ -7,6 +6,9 @@ import slide4 from './css/images/home/traintracks.jpg';
 import slide5 from './css/images/home/sky2.jpg';
 import slide6 from './css/images/home/glasshouse2.jpg';
 import slide7 from './css/images/home/glasshouse.jpg';
+
+import React from 'react';
+import ShowAd from './ShowAd';
 
 const HomePage = () => {
   return (
@@ -36,20 +38,20 @@ const HomePage = () => {
 
 
 
-      {/* <ul className="nav upcomingshows justify-content-center" style="display: none;">
+      <ul className="nav upcomingshows justify-content-center">
 
         <li className="nav-item">
           <h5>Upcoming Shows</h5>
         </li>
-      </ul>  */}
+      </ul> 
 
-      {/* <div id="upcomingshows">
+      <div id="upcomingshows">
  
         <div className="row justify-content-around">
-          
-          <div className="col-sm showad">
+          <ShowAd />
+          {/* <div className="col-sm showad">
             <div className="card"><img className="card-img-top" src="../static/css/images/home/pirates.jpg" alt="PromoFlyer"/></div>
-            <button className="btn btn-dark btn-block" type="button" data-toggle="collapse" data-target="#show1" aria-expanded="false" aria-controls="show1">Show Info</button>
+            <button className="btn btn-dark btn-block" type="button" data-bs-toggle="collapse" data-bs-target="#show1" aria-expanded="false" aria-controls="show1">Show Info</button>
             <div className="col-sm showinfo collapse multi-collapse" id="show1">
               <div className="card">
                 <div className="card-body text-center">
@@ -77,7 +79,7 @@ const HomePage = () => {
                   Get Tickets
               </button>
               <button className="btn btn-danger btn-block">
-                  <a href="https://piratesofemerson.fearticket.com/event/orderticket/eventid/351" className="gettix card-link" target="_blank">Get Tickets</a>
+                  <a href="https://piratesofemerson.fearticket.com/event/orderticket/eventid/351" className="gettix card-link" target="_blank" rel="noreferrer">Get Tickets</a>
               </button>
           </div>
           <div className="col-sm showad">
@@ -109,12 +111,12 @@ const HomePage = () => {
                   Get Tickets
               </button>
                <button className="btn btn-danger btn-block">
-                  <a href="https://piratesofemerson.fearticket.com/event/orderticket/eventid/351" className="card-link" target="_blank">Get Tickets</a>
+                  <a href="https://piratesofemerson.fearticket.com/event/orderticket/eventid/351" className="card-link" target="_blank" rel="noreferrer">Get Tickets</a>
               </button>
-          </div>
+          </div> */}
          
         </div>
-      </div>  */}
+      </div> 
 
 
 

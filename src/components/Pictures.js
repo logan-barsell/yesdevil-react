@@ -15,7 +15,7 @@ const Pictures = () => {
         })}
       </div>
     );
-  })
+  });
   
   return (
     <div id="pictures">
