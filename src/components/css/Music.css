@@ -3,33 +3,12 @@
   text-shadow: 1px 0.5px black;
 }
 
-.nav.thcoll {
-  background-color: rgba(0, 0, 0, 0.8);
-  border-bottom: 0.5px solid white;
-  box-shadow: 0px -1px 13px black;
-  position: sticky;
-  z-index: 1;
-  top: 95.5px;
-  width: 100%;
-}
-
-@media only screen and (max-width: 991px) {
-  .nav.thcoll {
-    top: 88px;
-  }
-}
-
-#alboom {
-  color: darkred;
-  text-shadow: 1px 1px #3b0600;
-}
-
-#album-name {
+/* #album-name {
   text-decoration: underline;
   margin: 0px 16px;
   color: black;
   text-shadow: 2px 1px 0px black;
-}
+} */
 
 audio {
   opacity: 0.6;
@@ -75,6 +54,13 @@ audio {
 .hcll {
   height: auto;
   margin: auto;
+}
+
+.dropdown-menu {
+  border-radius: 13px;
+  border: 7px solid rgba(0, 0, 0, 0.15);
+  opacity: 0.95;
+  min-width: 9rem;
 }
 
 #music .col {

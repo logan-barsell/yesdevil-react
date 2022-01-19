@@ -40,5 +40,24 @@ export const shows = [
       itemDesc: 'See Yes Devil LIVE @ The Study. ***IMPORTANT: All presale tickets ordered online will be available at WILL CALL under the name given (MUST HAVE ID TO PROVE IDENTITY) as soon as doors open the day of the show.***',
       isShippable: false
     }
+  },
+  {
+    id: 2,
+    picURL: showAd2,
+    name: 'Yes Devil @ The Study',
+    location: 'Hollywood, CA',
+    date: '5/25/19',
+    time: '8:00pm',
+    price: '$10',
+    ticketLink: null,
+    snipcartData: {
+      label: 'Get Tickets',
+      itemId: '4',
+      itemPrice: '10.00',
+      itemWeight: '3',
+      itemUrl: 'http://www.yesdevil.com',
+      itemDesc: 'See Yes Devil LIVE @ The Study. ***IMPORTANT: All presale tickets ordered online will be available at WILL CALL under the name given (MUST HAVE ID TO PROVE IDENTITY) as soon as doors open the day of the show.***',
+      isShippable: false
+    }
   }
 ];

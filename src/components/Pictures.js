@@ -5,10 +5,10 @@ const Pictures = () => {
 
   const renderPictureRows = pictureRows.map(pictureRow => {
     return (
-      <div className="row justify-content-around align-items-center">
+      <div key={pictureRow} className="row justify-content-around align-items-center">
         {pictureRow.map(picture => {
           return (
-            <div className="col-md-5">
+            <div key={picture} className="col-md-5">
               <div className="img-container"><img alt="" className="img-thumbnail" src={picture} /></div>
             </div>
           );
