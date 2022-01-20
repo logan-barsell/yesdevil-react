@@ -10,13 +10,16 @@
   width: 100%;
   height: 315px;
   margin-top: 30px;
+  border-radius: 180px;
+  border: 4px solid black;
+  box-shadow: 1px 1px 9px black;
 }
 
 .bio p {
   text-indent: 13%;
   margin: 20px;
   text-align: center;
-  text-shadow: 1px 0.5px black;
+  text-shadow: 2px 1.5px black;
 }
 
 .bio a {
@@ -33,8 +36,9 @@
 
 .members img {
   max-width: 100%;
-  padding-bottom: 27px;
+  margin-bottom: 27px;
   border-radius: 5px;
+  box-shadow: 1px 1px 9px black;
 }
 
 .members h4 {

@@ -3,13 +3,6 @@
   text-shadow: 1px 0.5px black;
 }
 
-/* #album-name {
-  text-decoration: underline;
-  margin: 0px 16px;
-  color: black;
-  text-shadow: 2px 1px 0px black;
-} */
-
 audio {
   opacity: 0.6;
   border-radius: 27px;
