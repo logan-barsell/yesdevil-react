@@ -24,19 +24,21 @@ const MerchPage = () => {
               <h5 className="card-title product-name">T-Shirt</h5>
             
               <div className="price">$<span>10.00</span></div>
-              <button
-                  className="snipcart-add-item btn btn-danger btn-block"
-                  data-item-id="1"
-                  data-item-name="Yes Devil T-Shirt (Style 1)"
-                  data-item-price="10.00"
-                  data-item-weight="135"
-                  data-item-url="http://www.yesdevil.com"
-                  data-item-description="Black shirt with YES DEVIL printed on the front."
-                  data-item-custom2-name="Size"
-                  data-item-custom2-options="Small|Medium|Large|X-Large"
-                  data-item-image={shirt}>
-                  Add to Cart
-              </button>
+              <div className="d-grid gap-2">
+                <button
+                    className="snipcart-add-item btn btn-danger"
+                    data-item-id="1"
+                    data-item-name="Yes Devil T-Shirt (Style 1)"
+                    data-item-price="10.00"
+                    data-item-weight="135"
+                    data-item-url="http://www.yesdevil.com"
+                    data-item-description="Black shirt with YES DEVIL printed on the front."
+                    data-item-custom2-name="Size"
+                    data-item-custom2-options="Small|Medium|Large|X-Large"
+                    data-item-image={shirt}>
+                    Add to Cart
+                </button>
+              </div>
             </div>
 
           </div>

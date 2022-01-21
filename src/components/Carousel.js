@@ -9,7 +9,7 @@ import React from 'react';
 
 const Carousel = () => {
   return(
-    <div className="carousel slide parallax" id="carouselExampleIndicators" data-bs-ride="carousel">
+    <div className="carousel slide carousel-fade" id="carouselExampleIndicators" data-bs-ride="carousel">
       <div className="carousel-inner">
         <div className="carousel-item active"><img className="d-block w-100" src={slide1} alt="First slide"/></div>
         <div className="carousel-item"><img className="d-block w-100" src={slide2} alt="Second slide"/></div>
