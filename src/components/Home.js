@@ -5,6 +5,7 @@ import React from 'react';
 import Carousel from './Carousel';
 import SecondaryNav from './SecondaryNav';
 import ShowAd from './ShowAd';
+import { shows } from './ShowDetails';
 
 const HomePage = () => {
   return (
@@ -12,14 +13,20 @@ const HomePage = () => {
 
       <Carousel />
 
-      <SecondaryNav label='Upcoming Shows' />
+      { shows[0] ? 
+        <>
+          <SecondaryNav label='Upcoming Shows' />
 
-      <div id="upcomingshows">
-        <div className="row justify-content-around">
-          <ShowAd />         
-        </div>
-      </div> 
-      
+          <div id="upcomingshows">
+            <div className="row justify-content-around">
+              <ShowAd />         
+            </div>
+          </div> 
+        </>
+      :
+        null
+      }
+
     </div>
   );
 }

@@ -12,6 +12,9 @@ const SnipcartButton = ({ data }) => {
       data-item-url={data.itemUrl}
       data-item-description={data.itemDesc}
       data-item-shippable={data.isShippable}
+      data-item-image={data.itemImg}
+      data-item-custom2-name={data.custom2Name ? data.custom2Name : null}
+      data-item-custom2-options={data.custom2Options ? data.custom2Options : null}
       >
       {data.label}
     </button>
