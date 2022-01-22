@@ -2,7 +2,7 @@ import bracelet from './css/images/merch/bracelet1.jpg';
 import shirt from './css/images/merch/shirt1.jpg';
 import shirt2 from './css/images/merch/merch2.jpeg';
 
-export const productDetails = [
+export const productList = [
   {
     id: 0,
     image: shirt,

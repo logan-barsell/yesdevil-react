@@ -1,10 +1,10 @@
 import React from 'react';
-import { productDetails } from './ProductDetails';
+import { productList } from './ProductList';
 import SnipcartButton from './SnipcartButton';
 
 const Products = () => {
 
-  const renderProducts = productDetails.map(product => {
+  const renderProducts = productList.map(product => {
     return (
       <div key={product.id} className="col-lg-4 col-md-6">
         <div className="card product"><img className="card-img-top" src={product.image} alt="Card image cap"/>
