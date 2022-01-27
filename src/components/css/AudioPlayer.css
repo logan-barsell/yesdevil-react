@@ -1,0 +1,73 @@
+.rhap_container {
+  border-radius: 0px 0px 5px 5px;
+  box-shadow: none;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.rhap_main-controls-button {
+  color: whitesmoke;
+}
+
+.rhap_volume-indicator {
+  background: whitesmoke;
+}
+
+.rhap_volume-button {
+  color: whitesmoke;
+}
+
+.rhap_volume-bar {
+  background: rgba(139, 0, 0, 0.6);
+}
+
+.rhap_progress-bar-show-download {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.rhap_progress-indicator {
+  background: whitesmoke;
+}
+
+.rhap_time {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.rhap_progress-filled {
+  background-color: rgba(139, 0, 0, 0.6);
+}
+
+.rhap_repeat-button {
+  color: whitesmoke;
+}
+
+#audio-player {
+  margin: 27px 0px;
+}
+
+#cover-img {
+  width: 100%;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.song {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 5px 0px;
+  margin: 7px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 2px rgb(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: 250ms;
+  height: 45px;
+  color: rgba(245, 245, 245, 0.3);
+}
+
+.song:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.song.active {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: whitesmoke;
+  border: 1px solid rgba(245, 245, 245, 0.3);
+}

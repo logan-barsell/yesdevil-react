@@ -1,6 +1,6 @@
 import './css/Music.css';
 import 'bootstrap/dist/js/bootstrap.bundle';
-import cover1 from './css/images/photogallery/yesdevilgas.jpg';
+// import cover1 from './css/images/photogallery/yesdevilgas.jpg';
 import itunes from './css/images/music/itunes.png';
 
 import React, { useState } from 'react';
@@ -9,6 +9,8 @@ import Songs from './Songs';
 import Lyrics from './Lyrics';
 import { songs } from './SongInfo';
 import SongCredits from './SongCredits';
+
+import AudioPlayer from './AudioPlayer';
 
 
 
@@ -49,7 +51,13 @@ const MusicPage = () => {
 
       <SecondaryNav label='The High Cost of Living Low' />
 
-      <div className="row justify-content-center">
+
+      
+          <AudioPlayer />
+  
+
+
+      {/* <div className="row justify-content-center">
         <div className="col img-container">
           <img id="album-cover" src={cover1} alt=""/>
 
@@ -93,7 +101,7 @@ const MusicPage = () => {
           }
 
         </div>
-      </div>
+      </div> */}
     </div>
 
   );
