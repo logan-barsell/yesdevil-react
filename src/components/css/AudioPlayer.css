@@ -29,6 +29,10 @@
   background: whitesmoke;
 }
 
+.rhap_download-progress {
+  background-color: rgba(245, 245, 245, 0.1);
+}
+
 .rhap_time {
   color: rgba(255, 255, 255, 0.3);
 }
@@ -62,12 +66,18 @@
   color: rgba(245, 245, 245, 0.3);
 }
 
-.song:hover {
+.song:hover,
+.song.even:hover {
   background-color: rgba(0, 0, 0, 0.1);
+  color: whitesmoke;
 }
 
 .song.active {
   background-color: rgba(0, 0, 0, 0.1);
   color: whitesmoke;
   border: 1px solid rgba(245, 245, 245, 0.3);
+}
+
+.song.even {
+  background-color: rgba(0, 0, 0, 0.4);
 }

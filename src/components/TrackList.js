@@ -6,11 +6,12 @@ const TrackList = ({ trackIndex, setTrackIndex, playing}) => {
   const renderTracks = trackInfo.map(track => {
     const active = trackIndex === track.id;
     const activeClass = active ? 'active' : '';
+    const evenStyles = (track.id % 2) === 1 ? 'even' : '';
 
     return (
       <div 
         key={track.id}
-        className={`${activeClass} song row justify-content-between align-items-center`}
+        className={`${activeClass} ${evenStyles} song row justify-content-between align-items-center`}
         onClick={()=> setTrackIndex(track.id)}
       >
         <div className="col-auto align-self-center">
