@@ -19,7 +19,7 @@ const BottomNav = ({ routes }) => {
         <div className="col-md-7">
           <div className="row justify-content-center">
             <div className="col-auto">
-              <button type="button" className="btn btn-danger" data-toggle="modal" data-target="#newsletterModal">
+              <button id="subscribe" type="button" className="btn btn-danger" data-bs-toggle="modal" data-bs-target="#newsletterModal">
                 Subscribe to our Newsletter
               </button>
             </div>
@@ -34,22 +34,28 @@ const BottomNav = ({ routes }) => {
               <div className="modal-header">
                 <h5 className="modal-title" id="exampleModalLongTitle">Yes Devil News</h5>
             
-                <button type="button" className="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
+                <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="whitesmoke" class="bi bi-x-lg" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z"/>
+                  <path fill-rule="evenodd" d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z"/>
+                </svg>
                 </button>
               </div>
               <form className="form-inline newsletter justify-content-center" action="https://formspree.io/contact@yesdevil.com" method="POST">
                 <div className="modal-body">
-                    <input className="form-control mr-sm-2" name="email" type="email" placeholder="Enter your email here" required="" />
-                    <ul id="newsDetails">
-                      <li>Stay informed on all upcoming events</li>
-                      <li>Recieve updates on new music releases, music videos, and vlogs</li>
-                      <li>Be notified of special deals, new merch, and giveaways</li>
-                    </ul>
+                  <div className="row mx-3 me-sm-5 pe-sm-5">
+                    <input className="form-control" name="email" type="email" placeholder="Enter your email here" required="" />
+                  </div>
+                    
+                  <ul id="newsDetails">
+                    <li>Stay informed on all upcoming events</li>
+                    <li>Recieve updates on new music releases, music videos, and vlogs</li>
+                    <li>Be notified of special deals, new merch, and giveaways</li>
+                  </ul>
                     
                 </div>
                 <div className="modal-footer">
-                  <button type="button" className="btn btn-dark" data-dismiss="modal">Close</button>
+                  <button type="button" className="btn btn-dark" data-bs-dismiss="modal">Close</button>
                   <button id="newsSub" className="btn btn-outline-light my-2 my-sm-0" value="send" type="submit">Subscribe</button>
                 </div>
               </form>
@@ -57,20 +63,6 @@ const BottomNav = ({ routes }) => {
           </div>
         </div>
 
-
-        {/* <button
-            className="snipcart-add-item btn btn-outline-light beer"
-            data-item-id="5"
-            data-item-name="Buy a beer for the band!"
-            data-item-price="1.00"
-            data-item-weight="3"
-            data-item-url="http://www.yesdevil.com"
-            data-item-description="Yes Devil thanks you for your donation!"
-            data-item-shippable="false"
-            data-item-image="../static/css/images/logos/beer.png"
-            >
-            <img src={beer} alt=""/>Buy us a BEER!
-        </button> */}
 
         <div className="iconsNav col-auto justify-content-center">
           <a className="" target="_blank" rel="noreferrer" href="https://www.facebook.com/YESDEVIL/"><img className="hvr-grow" src={facebook} alt="" /></a>

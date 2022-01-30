@@ -14,7 +14,7 @@ const ContactPage = () => {
     <div className="container" id="contact">
       <div className="row">
         <div className="col-lg">
-          <div className="jumbotron p-5">
+          <div className="jumbotron p-sm-5">
             <h5>Contact Information:</h5>
             <hr className="my-4"/>
             <p>
