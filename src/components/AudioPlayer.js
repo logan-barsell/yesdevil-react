@@ -25,7 +25,6 @@ const AudioPlayer = () => {
     );
   };
 
-  const [playing, setPlaying] = useState(false);
 
 
   return(
@@ -36,8 +35,6 @@ const AudioPlayer = () => {
         
           <PlayerControls
             src={trackInfo[trackIndex].src}
-            onPlay={() => setPlaying(true)}
-            onPause={() => setPlaying(false)}
             showSkipControls={true}
             showJumpControls={false}
             onClickPrevious={handleClickPrevious}
@@ -45,7 +42,9 @@ const AudioPlayer = () => {
             layout='stacked-reverse'
           />
         </div>
-        <TrackList trackIndex={trackIndex} setTrackIndex={setTrackIndex} playing={playing} />
+        <div id="buttonsAccordion">
+          <TrackList trackIndex={trackIndex} setTrackIndex={setTrackIndex} />
+        </div>
       </div>
     </div>
   );
