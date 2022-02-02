@@ -1,11 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { Collapse } from 'bootstrap';
+import { TrackContext } from './AudioPlayer';
+import TrackButtons from './TrackButtons';
 
-const TrackListItem = ({ track, trackIndex, setTrackIndex }) => {
+const TrackListItem = ({ track }) => {
   
+  const { trackIndex, setTrackIndex} = useContext(TrackContext);
 
   const active = trackIndex === track.id;
-  
   const activeClass = active ? 'active' : '';
   const evenStyles = (track.id % 2) === 1 ? 'even' : '';
   const headingId = `heading${track.id}`;
@@ -51,7 +53,9 @@ const TrackListItem = ({ track, trackIndex, setTrackIndex }) => {
         </div>
       </div>
 
-      <div id={collapseId} className='show accordion-collapse collapse row justify-content-center' aria-labelledby={headingId} data-bs-parent="#buttonsAccordion">
+      <TrackButtons track={track} collapseId={collapseId} headingId={headingId} />
+
+      {/* <div id={collapseId} className='show accordion-collapse collapse row justify-content-center' aria-labelledby={headingId} data-bs-parent="#buttonsAccordion">
         <div className="col-md-4 d-grid gap-2">
           <button type="button" className="btn btn-outline-light btn-sm">Lyrics</button>
         </div>
@@ -64,7 +68,7 @@ const TrackListItem = ({ track, trackIndex, setTrackIndex }) => {
         <button type="button" className="btn btn-outline-light btn-sm">Credits</button>
         </div>
         
-      </div>
+      </div> */}
     </>
   );
 };
