@@ -81,3 +81,19 @@
 .song.even {
   background-color: rgba(0, 0, 0, 0.4);
 }
+
+.accordion-collapse {
+  width: 100%;
+  margin: auto;
+  padding: 0px 10px;
+}
+
+#buttonsAccordion .d-grid {
+  padding: 0px 5px;
+}
+
+.btn-outline-light {
+  color: whitesmoke;
+  border-color: rgba(245, 245, 245, 0.3);
+  opacity: 0.7;
+}
