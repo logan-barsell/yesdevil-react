@@ -9,15 +9,15 @@ const TrackButtons = ({ track, collapseId, headingId }) => {
       data-bs-parent="#buttonsAccordion"
     >
 
-      <div className="col-md-4 d-grid gap-2">
+      <div className="col-12 col-sm-4 d-grid gap-2">
         <button type="button" className="btn btn-outline-light btn-sm">Lyrics</button>
       </div>
       
-      <div className="col-sm-4 d-grid gap-2">
+      <div className="col-12 col-sm-4 d-grid gap-2">
         <button type="button" className="btn btn-danger btn-sm">Get Song</button>
       </div>
       
-      <div className="col-sm-4 d-grid gap-2">
+      <div className="col-12 col-sm-4 d-grid gap-2">
       <button type="button" className="btn btn-outline-light btn-sm">Credits</button>
       </div>
       
