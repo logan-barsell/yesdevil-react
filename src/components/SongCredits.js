@@ -1,73 +1,34 @@
+import './css/Credits.css';
 import React from 'react';
 
-const SongCredits = () => {
+const SongCredits = ({ backUpVocals }) => {
   return (
-    <>
-      <h6>D.F.S.</h6>
-      <div>Vocals - Logan Barsell (written by Dez Monroe)</div>
-      <div>Lead Guitar - Matt Abbott</div>
-      <div>Drums - Eyan Stran</div>
-      <div>Rhythm Guitar - Logan Barsell</div>
-      <div>Bass - Nick Abbott</div>
-      <h6>So Sick</h6>
-      <div>Vocals - Logan Barsell (written by Logan Barsell and Eyan Stran)</div>
-      <div>Lead Guitar - Matt Abbott</div>
-      <div>Drums - Eyan Stran</div>
-      <div>Rhythm Guitar - Logan Barsell</div>
-      <div>Bass - Nick Abbott</div>
-      <div>Back-up Vocals - Zach Scherer, Dez Monroe, Logan Barsell, Matt Abbott, Nick Abbott, and Eyan Stran</div>
-      <h6>Break</h6>
-      <div>Vocals - Logan Barsell (written by Logan Barsell)</div>
-      <div>Lead Guitar - Matt Abbott</div>
-      <div>Drums - Eyan Stran</div>
-      <div>Rhythm Guitar - Logan Barsell</div>
-      <div>Bass - Nick Abbott</div>
-      <div>Back-up Vocals - Zach Scherer, Dez Monroe, Logan Barsell, Matt Abbott, Nick Abbott, and Eyan Stran</div>
-      <h6>Give it a Shot</h6>
-      <div>Vocals - Logan Barsell (written by Dez Monroe)</div>
-      <div>Lead Guitar - Matt Abbott</div>
-      <div>Drums - Eyan Stran</div>
-      <div>Rhythm Guitar - Logan Barsell</div>
-      <div>Bass - Nick Abbott</div>
-      <div>Back-up Vocals - Zach Scherer, Dez Monroe, Logan Barsell, Matt Abbott, Nick Abbott, and Eyan Stran</div>
-      <h6>Diamonds to Dust</h6>
-      <div>Vocals - Logan Barsell (written by Dez Monroe)</div>
-      <div>Lead Guitar - Matt Abbott</div>
-      <div>Drums - Eyan Stran</div>
-      <div>Rhythm Guitar - Logan Barsell</div>
-      <div>Bass - Nick Abbott</div>
-      <h6>Candlelight</h6>
-      <div>Vocals - Logan Barsell (written by Logan Barsell)</div>
-      <div>Lead Guitar - Matt Abbott</div>
-      <div>Drums - Eyan Stran</div>
-      <div>Rhythm Guitar - Logan Barsell</div>
-      <div>Bass - Nick Abbott</div>
-      <h6>Mind Pollution</h6>
-      <div>Vocals - Logan Barsell (written by Logan Barsell)</div>
-      <div>Lead Guitar - Matt Abbott</div>
-      <div>Drums - Eyan Stran</div>
-      <div>Rhythm Guitar - Logan Barsell</div>
-      <div>Bass - Nick Abbott</div>
-      <h6>Loose Screw</h6>
-      <div>Vocals - Logan Barsell (written by Dez Monroe)</div>
-      <div>Lead Guitar - Matt Abbott</div>
-      <div>Drums - Eyan Stran</div>
-      <div>Rhythm Guitar - Logan Barsell</div>
-      <div>Bass - Nick Abbott</div>
-      <h6>Cowboy Song</h6>
-      <div>Vocals - Logan Barsell (written by Dez Monroe)</div>
-      <div>Lead Guitar - Matt Abbott</div>
-      <div>Drums - Eyan Stran</div>
-      <div>Rhythm Guitar - Logan Barsell</div>
-      <div>Bass - Nick Abbott</div>
-      <div>Back-up Vocals - Zach Scherer, Dez Monroe, Logan Barsell, Matt Abbott, Nick Abbott, and Eyan Stran</div>
-      <h6>Smoke & Mirrors</h6>
-      <div>Vocals - Logan Barsell (written by Logan Barsell)</div>
-      <div>Lead Guitar - Matt Abbott</div>
-      <div>Drums - Eyan Stran</div>
-      <div>Rhythm Guitar - Logan Barsell</div>
-      <div>Bass - Nick Abbott</div>
-    </>
+    <div className="credits">
+      <div>
+        <h5>Vocals</h5> 
+        <p>Logan Barsell</p>
+      </div>
+      <hr/>
+      <div>
+        <h5>Lead Guitar</h5> 
+        <p>Matt Abbott</p>
+      </div>
+      <hr/>
+      <div>
+        <h5>Drums</h5> 
+        <p>Eyan Stran</p>
+      </div>
+      <hr/>
+      <div>
+        <h5>Rhythm Guitar</h5> 
+        <p>Logan Barsell</p>
+      </div>
+      <hr/>
+      <div>
+        <h5>Bass</h5> 
+        <p>Nick Abbott</p>
+      </div>
+    </div>
   );
 };
 

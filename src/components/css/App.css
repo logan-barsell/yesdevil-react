@@ -60,6 +60,16 @@ hr {
   background-color: black;
 }
 
+.modal-content {
+  background-color: black;
+  border: 2px solid darkred;
+  color: darkred;
+}
+
+.modal-body {
+  color: white;
+}
+
 /* HOVER CSS */
 
 #menu .hvr-sink {

@@ -92,8 +92,11 @@
   padding: 3px 5px;
 }
 
-.btn-outline-light {
-  color: whitesmoke;
+#audio-player .btn-outline-light {
   border-color: rgba(245, 245, 245, 0.3);
   opacity: 0.7;
+}
+
+#buttonsAccordion .modal-body {
+  text-align: center;
 }

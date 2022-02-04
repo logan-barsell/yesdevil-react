@@ -1,6 +1,10 @@
 import React from 'react';
+import ModalContent from './ModalContent';
 
 const TrackButtons = ({ track, collapseId, headingId }) => {
+  const lyricsModalId = `lyrics${track.id}`;
+  const getSongModalId = `getSong${track.id}`;
+  const creditsModalId = `credits${track.id}`;
   return (
     <div 
       id={collapseId}
@@ -10,15 +14,38 @@ const TrackButtons = ({ track, collapseId, headingId }) => {
     >
 
       <div className="col-12 col-sm-4 d-grid gap-2">
-        <button type="button" className="btn btn-outline-light btn-sm">Lyrics</button>
+        <button 
+          type="button" 
+          className="btn btn-outline-light btn-sm"
+          data-bs-toggle="modal" 
+          data-bs-target={`#${lyricsModalId}`}
+        >
+        Lyrics
+        </button>
+        <ModalContent modalId={lyricsModalId} track={track} />
       </div>
       
       <div className="col-12 col-sm-4 d-grid gap-2">
-        <button type="button" className="btn btn-danger btn-sm">Get Song</button>
+        <button 
+          type="button" 
+          className="btn btn-danger btn-sm"
+          data-bs-toggle="modal" 
+          data-bs-target={`#${getSongModalId}`}
+        >
+        Get Song
+        </button>
+        <ModalContent modalId={getSongModalId} track={track} />
       </div>
       
       <div className="col-12 col-sm-4 d-grid gap-2">
-      <button type="button" className="btn btn-outline-light btn-sm">Credits</button>
+        <button 
+          type="button" 
+          className="btn btn-outline-light btn-sm"
+          data-bs-toggle="modal" 
+          data-bs-target={`#${creditsModalId}`}
+        >Credits
+        </button>
+        <ModalContent modalId={creditsModalId} track={track} />
       </div>
       
     </div>
