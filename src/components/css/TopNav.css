@@ -21,6 +21,7 @@ nav {
 
 .navbar-light .navbar-nav .nav-link {
   color: white;
+  width: fit-content;
 }
 
 .navbar-nav {

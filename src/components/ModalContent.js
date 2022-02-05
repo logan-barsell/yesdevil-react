@@ -1,4 +1,6 @@
 import itunes from './css/images/music/itunes.png';
+import spotify from './css/images/music/spotify.png';
+import appleMusic from './css/images/music/applemusic.png';
 
 import React from 'react';
 import SongCredits from './SongCredits';
@@ -23,8 +25,12 @@ const ModalContent = ({ modalId, track }) => {
           <div className="modal-body" style={{ whiteSpace: 'pre-line' }}>
             {lyrics && track.lyrics}
             {getSong &&
-              <div>
+              <div className="getSongButtons">
                 <img className="itunes" src={itunes}/>
+                <hr/>
+                <img className="spotify" src={spotify} />
+                <hr/>
+                <img className="appleMusic" src={appleMusic} />
               </div>
             }
             {credits && <SongCredits />}
