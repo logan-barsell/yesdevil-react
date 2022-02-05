@@ -1,3 +1,5 @@
+import itunes from './css/images/music/itunes.png';
+
 import React from 'react';
 import SongCredits from './SongCredits';
 
@@ -20,6 +22,11 @@ const ModalContent = ({ modalId, track }) => {
           </div>
           <div className="modal-body" style={{ whiteSpace: 'pre-line' }}>
             {lyrics && track.lyrics}
+            {getSong &&
+              <div>
+                <img className="itunes" src={itunes}/>
+              </div>
+            }
             {credits && <SongCredits />}
           </div>
           <div className="modal-footer justify-content-center">
