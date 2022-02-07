@@ -26,10 +26,19 @@ const App = () => {
     {name:'Store', value:'/merch'},
     {name:'Media', value:'/media'},
     {name:'About Us', value:'/aboutus'},
-    {name:'Contact', value:'contact'}
+    {name:'Contact', value:'/contact'}
   ];
 
-  const [activeIndex, setActiveIndex] = useState(0);
+  const currentUrl = window.location.pathname;
+  let initialState;
+  for(let i=0; i<routes.length-1; i++) {
+    if(routes[i].value === currentUrl){
+      console.log(i);
+      initialState = i;
+    };
+  };
+
+  const [activeIndex, setActiveIndex] = useState(initialState);
   const [toggle, setToggle] = useState(false);
 
 
@@ -46,7 +55,7 @@ const App = () => {
             <Route path="/contact" exact element={<ContactPage />} />
           </Routes>
         <BottomNav  routes={routes} />
-        </ActiveContext.Provider>
+      </ActiveContext.Provider>
     </Router>
   );
 }

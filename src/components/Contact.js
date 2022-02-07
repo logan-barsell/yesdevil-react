@@ -1,8 +1,6 @@
 import React from 'react';
 
 import './css/Contact.css';
-import phone from './css/images/icons/phone.svg';
-import envelope from './css/images/icons/envelope-closed.svg';
 import facebook from './css/images/icons/facebook.svg';
 import insta from './css/images/icons/instagram.svg';
 import youtube from './css/images/icons/youtube.svg';
