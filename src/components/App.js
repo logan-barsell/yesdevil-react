@@ -1,7 +1,5 @@
 import './css/App.css';
-import 'pace-js';
-// import './plugins/pace.min.js';
-import 'pace-js/themes/red/pace-theme-loading-bar.css';
+import './plugins/loading-bar.css';
 
 import React, { useState, createContext } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
@@ -14,7 +12,6 @@ import MediaPage from './Media';
 import BioPage from './Bio';
 import ContactPage from './Contact';
 import history from '../history';
-
 
 export const ActiveContext = createContext();
 
@@ -30,10 +27,10 @@ const App = () => {
   ];
 
   const currentUrl = window.location.pathname;
+
   let initialState;
   for(let i=0; i<routes.length-1; i++) {
     if(routes[i].value === currentUrl){
-      console.log(i);
       initialState = i;
     };
   };
