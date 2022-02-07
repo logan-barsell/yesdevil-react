@@ -14,6 +14,7 @@ const MediaPage = () => {
   const onNavClick = (index, event) => {
     event.preventDefault()
     setActiveTab(index);
+    window.scrollTo({ top: 0});
   }
 
   const renderedNavItems = navOptions.map((option, index) => {
@@ -30,7 +31,7 @@ const MediaPage = () => {
 
 
   return (
-    <div id="blog">
+    <div id="blog" className="fadeIn">
       
       <ul className="nav main  justify-content-center">
         <div className="text-center row align-items-center">

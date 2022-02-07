@@ -18,7 +18,7 @@ const Pictures = () => {
   });
   
   return (
-    <div id="pictures">
+    <div id="pictures" className="fadeIn">
       {renderPictureRows}
     </div>
   );

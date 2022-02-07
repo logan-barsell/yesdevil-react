@@ -8,9 +8,7 @@ const TrackList = () => {
   const renderTracks = trackInfo.map(track => {
 
     return (
-      <>
-        <TrackListItem key={track.id} track={track} />
-      </>
+      <TrackListItem key={track.id} track={track} />
     );
   });
   return (

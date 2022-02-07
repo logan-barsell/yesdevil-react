@@ -26,11 +26,13 @@ const ModalContent = ({ modalId, track }) => {
             {lyrics && track.lyrics}
             {getSong &&
               <div className="getSongButtons">
-                <img className="itunes" src={itunes}/>
+                <a href={track.spotify} target="_blank" rel="noreferrer">
+                  <img className="spotify" src={spotify} alt="" />
+                </a>
                 <hr/>
-                <img className="spotify" src={spotify} />
-                <hr/>
-                <img className="appleMusic" src={appleMusic} />
+                <a href="#!" target="_blank">
+                  <img className="appleMusic" src={appleMusic} alt="" />
+                </a>
               </div>
             }
             {credits && <SongCredits />}

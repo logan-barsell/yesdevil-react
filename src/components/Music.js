@@ -47,7 +47,7 @@ const MusicPage = () => {
 
   
   return (
-    <div id="music">
+    <div id="music" className="fadeIn">
 
       <SecondaryNav label='The High Cost of Living Low' />
 

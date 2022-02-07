@@ -48,7 +48,7 @@ const BioPage = () => {
   });
 
   return (
-    <div id="aboutus">
+    <div id="aboutus" className="fadeIn">
 
       <div>
 

@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
+import { Link } from 'react-router-dom';
 import { ActiveContext } from './App';
-import Link from './Link';
 
 const NavLink = ({ routes, menuToggle }) => {
   
@@ -19,7 +19,7 @@ const NavLink = ({ routes, menuToggle }) => {
     const hvrSink = !toggle ? 'hvr-sink' : '';
 
     return (
-      <Link key={index} href={route.value} className={`nav-item nav-link ${hvrSink} ${active}`} onNavClick={() => onNavClick(index)} >{route.name}</Link>
+      <Link key={index} to={route.value} className={`nav-item nav-link ${hvrSink} ${active}`} onClick={() => onNavClick(index)} >{route.name}</Link>
     );
   });
 

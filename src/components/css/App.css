@@ -5,6 +5,32 @@ body {
   background-color: #272727;
 }
 
+/* FADE IN EFFECT */
+
+.pace-running .fadeIn > *:not(.pace) {
+  opacity: 0;
+}
+
+.pace-done .fadeIn > *:not(.pace) {
+  opacity: 1;
+  animation: FadeAnim 3s ease;
+}
+
+/* .fadeIn {
+  animation: FadeAnim 3s ease-in;
+} */
+
+@keyframes FadeAnim {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*GENERAL*/
+
 .red {
   color: darkred;
 }
@@ -61,7 +87,7 @@ hr {
 }
 
 .modal-content {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4);
   border: 2px solid darkred;
   color: darkred;
 }

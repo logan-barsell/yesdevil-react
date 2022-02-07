@@ -35,7 +35,7 @@ const Videos = () => {
   });
 
   return (
-    <div className="justify-content-center" id="videos">
+    <div className="justify-content-center fadeIn" id="videos">
 
       <ul className="nav nav-tabs justify-content-center videos-tab" role="tablist">
         <li className="nav-item" role="presentation">

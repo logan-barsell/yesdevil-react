@@ -9,7 +9,7 @@ import { shows } from './ShowDetails';
 
 const HomePage = () => {
   return (
-    <div id="home">
+    <div id="home" className="fadeIn">
 
       <Carousel />
 

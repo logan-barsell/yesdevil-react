@@ -8,7 +8,7 @@ import Products from './Products';
 
 const MerchPage = () => {
   return (
-    <div id="merch">
+    <div id="merch" className="fadeIn">
       
       <SecondaryNav label='Merchandise' />
 

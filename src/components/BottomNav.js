@@ -84,7 +84,7 @@ const BottomNav = ({ routes }) => {
             <div className="col-md-5">
               <h5 className="text-uppercase">Links</h5>
               <ul id="footer-links" className="list-unstyled">
-                <li><NavLink routes={routes} menuToggle={() => null} /></li>
+                {/* <li><NavLink routes={routes} menuToggle={() => null} /></li> */}
               </ul>
             </div>
           </div>
