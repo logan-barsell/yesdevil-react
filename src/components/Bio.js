@@ -70,7 +70,7 @@ const BioPage = () => {
         <br/>
 
 
-        <div className="members">
+        <div className="members mb-4">
 
           <SecondaryNav label="Members" />
 

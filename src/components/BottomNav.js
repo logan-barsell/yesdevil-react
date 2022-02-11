@@ -18,7 +18,7 @@ const BottomNav = ({ routes }) => {
         <div className="col-md-7">
           <div className="row justify-content-center">
             <div className="col-auto">
-              <button id="subscribe" type="button" className="btn btn-danger " data-bs-toggle="modal" data-bs-target="#newsletterModal">
+              <button id="subscribe" type="button" className="btn btn-danger mx-sm-3" data-bs-toggle="modal" data-bs-target="#newsletterModal">
                 Subscribe to our Newsletter
               </button>
             </div>
@@ -63,7 +63,7 @@ const BottomNav = ({ routes }) => {
         </div>
 
 
-        <div className="iconsNav col-auto justify-content-center">
+        <div className="iconsNav col-auto justify-content-center mx-1">
           <a className="" target="_blank" rel="noreferrer" href="https://www.facebook.com/YESDEVIL/"><img className="hvr-grow" src={facebook} alt="" /></a>
           <a className="w" target="_blank" rel="noreferrer" href="https://www.instagram.com/yes_devil/?hl=en"><img className="hvr-grow" src={insta} alt=""/></a>
           <a className="" target="_blank" rel="noreferrer" href="https://www.youtube.com/channel/UC_jExvqWhRlM-gBt9iEsLxA"><img className="hvr-grow" src={youtube} alt=""/></a>

@@ -3,7 +3,7 @@ import eyan from './css/images/aboutus/eyan0.jpg';
 
 export const members = [
   {
-    id: 1,
+    id: 0,
     name: 'Matt Abbott',
     role: 'Lead Guitar',
     pic: matt,
@@ -12,7 +12,7 @@ export const members = [
     sc: 'deadringer_87'
   },
   {
-    id: 2,
+    id: 1,
     name: 'Eyan Stran',
     role: 'Drums',
     pic: eyan,
