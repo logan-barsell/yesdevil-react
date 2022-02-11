@@ -114,7 +114,7 @@ export const trackInfo = [
   
   {
     id: 9,
-    name: "Smoke and Mirrors",
+    name: "Smoke & Mirrors",
     src: audio9,
     time: '7:30',
     lyrics: `

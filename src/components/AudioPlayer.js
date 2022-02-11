@@ -30,7 +30,7 @@ const AudioPlayer = () => {
 
   return(
     <div id="audio-player" className="row justify-content-center">
-      <div className="col-md-6 col-10">
+      <div className="col-sm-10 col-md-6 col-12">
         <div>
           <img id="cover-img" src={cover} alt="album cover" />
         

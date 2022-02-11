@@ -1,7 +1,7 @@
 import './css/Music.css';
 import 'bootstrap/dist/js/bootstrap.bundle';
 
-import React, { useState } from 'react';
+import React from 'react';
 import SecondaryNav from './SecondaryNav';
 
 import AudioPlayer from './AudioPlayer';
@@ -10,24 +10,24 @@ import AudioPlayer from './AudioPlayer';
 
 const MusicPage = () => {
   
-  const [activeTab, setActiveTab] = useState(0);
+  // const [activeTab, setActiveTab] = useState(0);
   
-  const tabOptions = ['Songs', 'Lyrics', 'Credits'];
+  // const tabOptions = ['Songs', 'Lyrics', 'Credits'];
 
-  const tabSelection = tabOptions.map((tab, index) => {
-    const active = index === activeTab ? 'active' : '';
-    return (
-      <li key={index} className="nav-item">
-        <a 
-          href="#!"
-          className={`nav-link ${active}`}
-          onClick={() => setActiveTab(index)}
-        >
-          {tab}
-        </a>
-      </li>
-    );
-  });
+  // const tabSelection = tabOptions.map((tab, index) => {
+  //   const active = index === activeTab ? 'active' : '';
+  //   return (
+  //     <li key={index} className="nav-item">
+  //       <a 
+  //         href="#!"
+  //         className={`nav-link ${active}`}
+  //         onClick={() => setActiveTab(index)}
+  //       >
+  //         {tab}
+  //       </a>
+  //     </li>
+  //   );
+  // });
 
   // const selectedContent = () => {
   //   if (activeTab === 0) {
