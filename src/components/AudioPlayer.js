@@ -32,7 +32,7 @@ const AudioPlayer = () => {
     <div id="audio-player" className="row justify-content-center">
       <div className="col-md-6 col-10">
         <div>
-          <img id="cover-img" src={cover}/>
+          <img id="cover-img" src={cover} alt="album cover" />
         
           <PlayerControls
             src={trackInfo[trackIndex].src}

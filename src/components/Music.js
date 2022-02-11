@@ -1,14 +1,8 @@
 import './css/Music.css';
 import 'bootstrap/dist/js/bootstrap.bundle';
-// import cover1 from './css/images/photogallery/yesdevilgas.jpg';
-import itunes from './css/images/music/itunes.png';
 
 import React, { useState } from 'react';
 import SecondaryNav from './SecondaryNav';
-import Songs from './Songs';
-import Lyrics from './Lyrics';
-import { songs } from './SongInfo';
-import SongCredits from './SongCredits';
 
 import AudioPlayer from './AudioPlayer';
 

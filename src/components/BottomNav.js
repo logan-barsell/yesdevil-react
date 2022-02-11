@@ -2,7 +2,6 @@ import React from 'react';
 import NavLink from './NavLink';
 
 import './css/BottomNav.css';
-import beer from './css/images/logos/beer.png';
 import facebook from './css/images/icons/facebook.png';
 import insta from './css/images/icons/insta.png';
 import soundcloud from './css/images/icons/soundcloud.png';
@@ -84,7 +83,7 @@ const BottomNav = ({ routes }) => {
             <div className="col-md-5">
               <h5 className="text-uppercase">Links</h5>
               <ul id="footer-links" className="list-unstyled">
-                <li><NavLink routes={routes} menuToggle={() => null} /></li>
+                <li><NavLink routes={routes} menuToggle={false} /></li>
               </ul>
             </div>
           </div>

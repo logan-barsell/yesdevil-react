@@ -1,4 +1,3 @@
-import logan from './css/images/aboutus/logan0.jpg'
 import matt from './css/images/aboutus/matt0.jpg';
 import eyan from './css/images/aboutus/eyan0.jpg';
 

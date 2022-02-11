@@ -1,4 +1,3 @@
-import itunes from './css/images/music/itunes.png';
 import spotify from './css/images/music/spotify.png';
 import appleMusic from './css/images/music/applemusic.png';
 
