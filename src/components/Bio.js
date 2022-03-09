@@ -55,7 +55,7 @@ const BioPage = () => {
         <div className="container">
 
           <div className="row justify-content-center">
-            <div className="col-auto">
+            <div className="col-7 col-sm-auto">
               <img className="aboutuspic" src={vango} alt=""/>
             </div>
             
