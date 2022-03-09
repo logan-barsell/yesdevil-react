@@ -36,7 +36,7 @@ const BioPage = () => {
             </div>
             <div className="row">
               <div className="col-auto a2a_kit a2a_kit_size_32 a2a_default_style a2a_follow">
-                <a href="#!" className="a2a_button_facebook" data-a2a-follow={member.fb}></a>
+                <a href="#!" className="a2a_button_facebook" data-a2a-follow={member.fb}> </a>
                 <a href="#!" className="a2a_button_instagram" data-a2a-follow={member.ig}> </a>
                 <a href="#!" className="a2a_button_snapchat" data-a2a-follow={member.sc}> </a>
               </div>

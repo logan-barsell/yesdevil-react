@@ -27,6 +27,7 @@ const App = () => {
   ];
 
   const currentUrl = window.location.pathname;
+  console.log(currentUrl);
 
   let initialState;
   for(let i=0; i<routes.length-1; i++) {
