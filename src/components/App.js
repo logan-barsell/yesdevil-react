@@ -41,7 +41,7 @@ const App = () => {
 
 
   return (
-    <Router history={history}>
+    <Router>
       <ActiveContext.Provider value={{ activeIndex, setActiveIndex, toggle, setToggle}}>
         <TopNav  routes={routes} />
           <Routes>
