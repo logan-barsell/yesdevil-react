@@ -1,4 +1,5 @@
 import './css/App.css';
+import './css/Snipcart.css'
 import './plugins/loading-bar.css';
 
 import React, { useState, createContext } from 'react';

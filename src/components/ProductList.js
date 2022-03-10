@@ -18,7 +18,7 @@ export const productList = [
       itemDesc: 'Black shirt with YES DEVIL printed on the front.',
       isShippable: true,
       custom1Name: 'Size',
-      custom1options: 'Small|Medium|Large|X-Large',
+      custom1options: 'Sm|Md|Lg|XL',
       itemImg: shirt
     }
   },
@@ -37,7 +37,7 @@ export const productList = [
       itemDesc: 'Black shirt with Yes Devil Skull Logo printed on the front.',
       isShippable: true,
       custom1Name: 'Size',
-      custom1options: 'Small|Medium|Large|X-Large',
+      custom1options: 'Sm|Md|Lg|XL',
       itemImg: shirt2
     }
   },
@@ -56,7 +56,7 @@ export const productList = [
       itemDesc: 'Black wristband with "YES DEVIL" printed on the front and "The High Cost of Living Low" on the back.',
       isShippable: true,
       custom1Name: 'Size',
-      custom1options: 'Small|Medium|Large|X-Large',
+      custom1options: 'Sm|Md|Lg|XL',
       itemImg: bracelet
     }
   }
