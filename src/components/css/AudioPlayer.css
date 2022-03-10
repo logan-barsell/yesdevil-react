@@ -5,6 +5,10 @@
   background-color: rgba(0, 0, 0, 0.6);
 }
 
+.rhap_container:focus {
+  outline: none;
+}
+
 .rhap_main-controls-button {
   color: whitesmoke;
 }
